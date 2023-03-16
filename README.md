@@ -1,7 +1,6 @@
 ## Hls-ffmpeg
 
-This project intents to download the a video from Google drive and make HLS assets with segments and extract the audios.
-then create a master playlist for videos with different resolutions to different bandwidths, and make an another playlist for the audios.
+This project intends to download a video from Google Drive, make HLS assets with segments, and extract the audio. Then create a master playlist for videos with different resolutions to different bandwidths, and make another playlist for the audio.
 
 Including the file server with Golang for local/internal live streaming
 
@@ -14,11 +13,11 @@ Including the file server with Golang for local/internal live streaming
 
 ### Prerequisite 
 
-I suppose that the FFMPEG has been installed
+I suppose that the FFMPEG has been installed.
 
 ### How to run the script?
 
-You can choose between one of the following, just Open the terminal and type
+You can choose between the following, just Open the terminal and type.
 
 1. 
 
@@ -40,7 +39,7 @@ sh script.sh
 
 ### The output after execution
 
-* After the execution you will find the following directories contains different HLS segments with different resolution and bitrate and named in the directory
+* After the execution, you will find the following directories contains different HLS segments with different resolution and bitrate and are named in the directory
 
     1. video_6000k/
     2. video_4500k/
@@ -50,11 +49,11 @@ sh script.sh
 
 * Master playlist for the videos `master.m3u8` with different resolutions to different bandwidths
 
-* Master playlist for the audios `audio_.m3u8` for the audio to the all HLS segments
+* Master playlist for the audio `audio_.m3u8` for the audio to all HLS segments
 
-* `Logs` directories for logs of (videos, audios, file server, ffmpeg)
+* `Logs` directories for logs of (videos, audios, file server, FFmpeg)
 
-### How will look like after execution in treeview
+### How will it look like after execution in treeview
 
 ``` 
 ├── Readme.md
@@ -128,9 +127,9 @@ sh script.sh
 
 ### How to open the master playlist?
 
-You will find the following message at the terminal 
+You will find the following message at the terminal. 
 
 > Please open http://localhost:8081/master.m3u8 at `Safari` or `VLC` File > Open Network > URL
 
 > Or Open with VLC `master.m3u8`
-> Also you can run `audio_.m3u8` by double click on it to run with Music in Mac os
+> Also, you can run `audio_.m3u8` by double-clicking on it to run with Music on Mac os.
